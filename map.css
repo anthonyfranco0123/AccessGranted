@@ -1,0 +1,19 @@
+/* CSS files add styling rules to your content */
+#mapid {
+    margin-top: 3em;
+    height: 100%;
+  }
+  
+  @media (min-width: 650px) {
+    body {
+      padding: 0 2rem;
+    }
+  }
+  
+  html, body {
+    height: 90%;
+    width: 90vw;
+    margin: 0;
+  }
+  
+  

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <link rel="stylesheet"
+        href="SheetCss.css">
+    <link rel="shortcut icon"
+        href="img/google-sheets-logo-.png"
+        type="image/x-icon">
+    <title>Bus Route</title>
+  
+      <!-- leaflet (map library) CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+     crossorigin=""></script>
+
+</head>
+
+<body>
+    <div class="nav-wrapper">
+                <div class="left-side">
+                      <div class="nav-link-wrapper active-nav-link">
+                          <a href="index.html">Home</a>
+                      </div>
+          
+                      <div class="nav-link-wrapper">
+                          <a href="about.html">About</a>
+                      </div>
+
+                      <div class="nav-link-wrapper">
+                          <a href="Sheet.html">Bus Routes</a>
+                      </div>
+
+                      <div class="nav-link-wrapper">
+                        <a href="map.html">Map</a>
+                      </div>
+                </div>
+    </div>
+
+    <div class="pimg2">
+      <div class="ptext">
+          <span class="border trans">
+            Valley Regional Transit
+          </span>
+      </div>
+    </div>
+
+      <div class="container">
+        <section class="title">
+            <!--<img src="img/google-sheets-logo-.png"
+                alt="sheets"
+                class="title__logo">-->
+            <div class="title__text">
+                <h1 class="title__text--name">Current Bus Route</h1>
+                <h3 class="title__text--description">Try out our map! --></h3>
+            </div>
+        </section>
+        <section class="spreadsheet">
+            <table class="spreadsheet__table"
+                id="table-main">
+                <thead class="spreadsheet__table--headers"
+                    id="table-headers">
+                </thead>
+                <tbody class="spreadsheet__table--body"
+                    id="table-body">
+                </tbody>
+            </table>
+        </section>
+        <section class="spreadsheet-controls">
+            <button class="reset-btn"
+                id="reset">Reset Data</button>
+        </section>
+        <script src="SheetJS.js" defer></script>
+        <script src="getLists.js" ></script>
+      </div>
+  
+     <div id="mapid"></div>
+    
+     <div>      mapz    </div>
+
+      <div class="pimg3">
+        <div class="ptext">
+          <span class="border trans">
+            
+          </span>
+        </div>
+      </div>
+
+      <section class="container2">
+          <div class="subtitle">
+              Any locations you want the bus to go to? Let us know below!
+          </div>
+          <div>
+            
+          </div>
+          <input type="text" name="address">
+          <input type="submit" name="submitButton" class="btn" value="Submit">
+      </section>
+
+       <div class="pimg2">
+          <div class="ptext">
+              <span class="border trans">
+                
+              </span>
+          </div>
+        </div>
+
+    </body>
+
+</html>

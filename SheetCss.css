@@ -1,0 +1,338 @@
+#mapid {
+    margin-top: 3em;
+    height: 300px;
+  }
+  
+  @media (min-width: 650px) {
+    body {
+      padding: 0 2rem;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-wrapper {
+    position: absolute;
+    padding: 38px;
+    z-index: 1;
+    overflow: auto;
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .left-side {
+    display: flex;
+  }
+  
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+  .active-nav-link {
+    border-bottom: 1px solid black;
+  }
+  
+  .active-nav-link a {
+    color: black !important;
+  }
+  
+  .nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  
+  .nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+  
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    /*opacity:0.70;*/
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg2{
+    background-image:url(https://images.unsplash.com/photo-1567001988304-985f0aeb1c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80);
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url(https://images.unsplash.com/photo-1546955870-9fc9e5534349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    min-height:400px;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  
+  .container{
+    background-color: white;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 123px;
+  }
+  
+  .title__logo {
+    height: 7rem;
+    margin: 1rem;
+  }
+  
+  .title__text {
+    margin-left: 2rem;
+    color: black;
+  }
+  
+  .title__text--name {
+    font-size: 3.6rem;
+    display: inline;
+    font-weight: 600;
+  }
+  
+  .title__text--description {
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  
+  .spreadsheet {
+    margin: 1rem 0.5rem;
+    /*background-color: white;*/
+  }
+  
+  table,
+  td,
+  th,
+  tr {
+    border: 0.05rem solid rgba(197, 197, 197, 0.486);
+    font-size: 1.4rem;
+    height: 2.5rem;
+    border-spacing: 0rem;
+  }
+  
+  th {
+    font-weight: 500;
+  }
+  
+  thead {
+    /* background-color: rgb(160, 180, 206); */
+    background-color: #f1f1f1;
+    /* color: #fff; */
+  }
+  
+  td {
+    min-width: 10rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  th {
+    padding: 0.2rem 0.4rem;
+  }
+  th > .dropdown {
+    float: right;
+  }
+  
+  tbody th {
+    min-width: 5rem;
+    background: #fafafa;
+  }
+  
+  .spreadsheet{
+    margin-left: 142px;
+    z-index: 3;
+  
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #e2e2e2d0;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0rem 0.3rem;
+    /* /* font-size: 1.2rem; */
+    border: none;
+    cursor: pointer;
+    transition: ease 0.4s;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #d0d0d0;
+    /* visibility: visible; */
+  }
+  
+  .dropbtn img {
+    height: 2rem;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 16rem;
+    box-shadow: 0 0.5rem 0.8rem 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content p {
+    color: rgb(133, 132, 132);
+    padding: 0.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content p:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+  }
+  
+  .column-header-span {
+    cursor: pointer;
+  }
+  
+  .spreadsheet-controls {
+    margin-left: 0.5rem;
+    margin-left: 142px;
+    margin-bottom: 2rem;
+  }
+  
+  .reset-btn {
+    padding: 0.5rem 1.5rem;
+    /*background-color: #d9534f;*/
+    background-color: white;
+    color: #fff;
+    /*border-color: #d43f3a;*/
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: ease 0.3s;
+  }
+  
+  .reset-btn:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+  }
+  
+  .container2{
+    font-size: 3.6rem;
+    display: inline;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  input[type=text]{
+    position: relative;
+    left: 38%;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 4px;
+    /*margin: 8px 0;*/
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    /*text-align: center;*/
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+  }
+  
+  input[type=text]:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .btn{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    padding: 10px 24px;
+    position: relative;
+    left: 600px;
+  }
+  
+  .btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
